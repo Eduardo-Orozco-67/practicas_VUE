@@ -14,7 +14,9 @@ const model = ref([
             { label: 'RFC', icon: 'pi pi-fw pi-check-square', to: '/uikit/rfc'},
             { label: 'Punto de venta', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
             { label: 'Input', icon: 'pi pi-fw pi-check-square', to: '/uikit/input' },
-            
+            { label: 'Consumo de Api', icon: 'pi pi-fw pi-id-card', to: '/uikit/api' },
+            { label: 'Consumo de Api 2', icon: 'pi pi-fw pi-id-card', to: '/uikit/api2' },
+            { label: 'Graficas', icon: 'pi pi-fw pi-id-card', to: '/uikit/graficas' },
         ]
     },
     

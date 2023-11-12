@@ -24,6 +24,21 @@ const router = createRouter({
                     component: () => import('@/views/uikit/rfc.vue')
                 },
                 {
+                    path: '/uikit/api',
+                    name: 'api',
+                    component: () => import('@/views/uikit/api.vue')
+                },
+                {
+                    path: '/uikit/api2',
+                    name: 'api2',
+                    component: () => import('@/views/uikit/api2.vue')
+                },
+                {
+                    path: '/uikit/graficas',
+                    name: 'graficas',
+                    component: () => import('@/views/uikit/graficas.vue')
+                },
+                {
                     path: '/uikit/input',
                     name: 'input',
                     component: () => import('@/views/uikit/Input.vue')
