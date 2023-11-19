@@ -6,6 +6,7 @@
 
 <script>
 import axios from 'axios';
+import 'chartjs-adapter-date-fns';
 import { Chart } from 'chart.js';
 import 'chart.js/auto';
 
@@ -35,12 +36,14 @@ export default {
         const dates = data.map(entry => new Date(entry.date));
         const closingValues = data.map(entry => entry.close);
 
-        // Llamada a la función que renderiza la gráfica
+        // Llamando a la función que renderiza la gráfica
         this.renderChart(dates, closingValues);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     },
+
+
     renderChart(dates, closingValues) {
       const ctx = document.getElementById('myChart').getContext('2d');
       const myChart = new Chart(ctx, {
@@ -64,7 +67,7 @@ export default {
               time: {
                 unit: 'day',
                 displayFormats: {
-                  day: 'MMM D', // Format for displaying on the x-axis
+                  day: 'MMM d', // Cambiado de 'MMM D' a 'MMM d'
                 },
               },
             },
@@ -75,6 +78,9 @@ export default {
         },
       });
     },
+
+
+
   },
 };
 </script>

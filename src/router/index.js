@@ -39,6 +39,11 @@ const router = createRouter({
                     component: () => import('@/views/uikit/graficas.vue')
                 },
                 {
+                    path: '/uikit/chat',
+                    name: 'chat',
+                    component: () => import('@/views/uikit/chat.vue')
+                },
+                {
                     path: '/uikit/input',
                     name: 'input',
                     component: () => import('@/views/uikit/Input.vue')

@@ -17,6 +17,7 @@ const model = ref([
             { label: 'Consumo de Api', icon: 'pi pi-fw pi-id-card', to: '/uikit/api' },
             { label: 'Consumo de Api 2', icon: 'pi pi-fw pi-id-card', to: '/uikit/api2' },
             { label: 'Graficas', icon: 'pi pi-fw pi-id-card', to: '/uikit/graficas' },
+            { label: 'chat', icon: 'pi pi-fw pi-id-card', to: '/uikit/chat' },
         ]
     },
     
